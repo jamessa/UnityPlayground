@@ -1,0 +1,3 @@
+[submodule "Submodule/unitytesttools"]
+	path = Submodule/unitytesttools
+	url = git@github.com:spe3d/unitytesttools.git
