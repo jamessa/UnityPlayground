@@ -260,15 +260,25 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11483376, guid: 6f42f0409e8874515a5ea1d294d29663, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 6f42f0409e8874515a5ea1d294d29663, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &798475106 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11473850, guid: 6f42f0409e8874515a5ea1d294d29663,
-    type: 2}
+--- !u!1 &798475106 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 131658, guid: 6f42f0409e8874515a5ea1d294d29663, type: 2}
   m_PrefabInternal: {fileID: 798475105}
+--- !u!114 &798475107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 798475106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 396e9564b67f348c6babea4dbd3fda0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1116963368
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,7 +536,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 798475106}
+      - m_Target: {fileID: 798475107}
         m_MethodName: LoadScene
         m_Mode: 5
         m_Arguments:
