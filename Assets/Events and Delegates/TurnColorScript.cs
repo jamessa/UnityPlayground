@@ -2,7 +2,6 @@
 
 public class TurnColorScript : MonoBehaviour
 {
-
 	void OnEnable ()
 	{
 		EventManager.OnClicked += TurnColor;
