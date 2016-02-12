@@ -11,3 +11,7 @@ EditorBuildSettings:
     path: Assets/Transitions/1 Simple/Screen1.unity
   - enabled: 1
     path: Assets/Transitions/1 Simple/Screen2.unity
+  - enabled: 1
+    path: Assets/Singleton/Singleton Screen2.unity
+  - enabled: 1
+    path: Assets/Singleton/Singleton Screen1.unity
