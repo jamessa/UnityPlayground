@@ -1,24 +1,28 @@
 ﻿namespace Example.Singleton.Pure
 {
+	// Creating a singleton class is just a few lines of code, and
+	// with the difficulty of making a generic singleton i always write those lines of code
+	// from http://stackoverflow.com/questions/380755/a-generic-singleton
 	public class Singleton
 	{
-		// private by default
-		static Singleton instance;
-
+		// Singleton Pattern
 		Singleton ()
 		{
 		}
 
+		static Singleton ()
+		{
+		}
+
+		static Singleton _instance = new Singleton ();
+
 		public static Singleton Instance {
 			get { 
-				if (instance == null) {
-					instance = new Singleton ();
-				}
-				return instance;
+				return _instance;
 			}
 		}
 
-		// set to zero by default
+		// Actual functions starts here.
 		int Counter;
 
 		public int Add (int count)
