@@ -19,11 +19,11 @@ namespace Example.Singleton.UnityWay
 					if (_instance == null) {
 						var singleton = new GameObject ();
 						_instance = singleton.AddComponent<Singleton> ();
-						singleton.name = "(singleton)" + typeof(Singleton).ToString ();
+						singleton.name = "(singleton)" + typeof(Singleton);
 
 						DontDestroyOnLoad (singleton);
 
-						Debug.Log ("[Singleton An instance of " + typeof(Singleton).ToString () + " is need in the scene, so '" + singleton + "' was created with DontDestroyOnLoad.");
+						Debug.Log ("[Singleton An instance of " + typeof(Singleton) + " is need in the scene, so '" + singleton + "' was created with DontDestroyOnLoad.");
 					} else {
 						Debug.Log ("[Singleton Using instance already created: " + _instance.gameObject.name);
 					}
@@ -32,7 +32,7 @@ namespace Example.Singleton.UnityWay
 			}
 		}
 	
-		static bool applicationIsQuitting = false;
+		static bool applicationIsQuitting; 
 
 		public void OnDestroy ()
 		{
