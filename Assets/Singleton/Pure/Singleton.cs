@@ -5,7 +5,6 @@
 	// from http://stackoverflow.com/questions/380755/a-generic-singleton
 	public class Singleton
 	{
-		// Singleton Pattern
 		Singleton ()
 		{
 		}
