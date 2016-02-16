@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
 
-public class Simple : MonoBehaviour
+namespace Example.Transitions.Simple
 {
-	public void LoadScene (string sceneString)
+	public class Simple : MonoBehaviour
 	{
-		SceneManager.LoadScene (sceneString);
+		public void LoadScene (string sceneString)
+		{
+			SceneManager.LoadScene (sceneString);
+		}
 	}
 }
