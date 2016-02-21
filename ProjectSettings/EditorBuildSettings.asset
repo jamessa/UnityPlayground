@@ -15,3 +15,9 @@ EditorBuildSettings:
     path: Assets/Singleton/Singleton Screen2.unity
   - enabled: 1
     path: Assets/Singleton/Singleton Screen1.unity
+  - enabled: 1
+    path: Assets/Loading/Loading Main Scene.unity
+  - enabled: 1
+    path: Assets/Loading/Loading Scene.unity
+  - enabled: 1
+    path: Assets/Loading/Loading Second Scene.unity
