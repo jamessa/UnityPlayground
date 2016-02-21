@@ -27,3 +27,9 @@ Thumbs.db.meta
 
 # Editor Test Runner Default
 EditorTestResults.xml
+
+# MonoDevelop Preference
+repository-cache/
+RecentlyUsed.xml
+Default.mdpolicy.xml.previous
+MonoDevelopProperties.xml.previous
