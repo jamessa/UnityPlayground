@@ -517,8 +517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf4a3f627c8ca4e018883f59dd8b4891, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LoadingScene: {fileID: 1920170694}
-  LoadingBar: {fileID: 0}
+  LoadingScenePanel: {fileID: 1920170694}
 --- !u!4 &1978263364
 Transform:
   m_ObjectHideFlags: 0
