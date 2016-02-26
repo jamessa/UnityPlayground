@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System;
 using System.Collections;
 
 public class EnumerateExampleA : MonoBehaviour
@@ -13,14 +14,22 @@ public class EnumerateExampleA : MonoBehaviour
 		return result;
 	}
 
-	public static IEnumerable EPower(int number, int exponent)
+	public IEnumerable FibonacciUnder(int max)
 	{
-		int counter = 0;
-		int result = 1;
-		while (counter++ < exponent) {
-			result *= number;
-			yield return result;
-		}
+		int[] n = { 0, 0 };
+		int f;
+		while (true) {
+			f = n[0] + n[1];
+			if (f == 0)
+				f = 1;
+			n[0] = n[1];
+			n[1] = f;
+
+			if (f < max)
+				yield return f;
+			else
+				yield break;
+		} 
 	}
 
 	void Start()
@@ -29,7 +38,7 @@ public class EnumerateExampleA : MonoBehaviour
 			print(Power(2, i));
 		}
 			
-		foreach (int i in EPower(2,8)) {
+		foreach (int i in FibonacciUnder(100)) {
 			print(i);
 		}
 	}
