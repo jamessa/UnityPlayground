@@ -25,3 +25,24 @@ Normal coroutine updates are run after the Update function returns. A coroutine 
 * `yield StartCoroutine` Chains the coroutine, and will wait for the MyFunc coroutine to complete first.
 
 From http://docs.unity3d.com/Manual/ExecutionOrder.html
+
+#Typical Patterns
+
+If you have a processing take a long time, use `isReady` or `isDone` pattern like `AsyncOperation`.
+
+```c#
+
+isDone = false;
+
+IEnumeration AFunctionThatTakesALongTime(){
+  while(download no finished , or scnen still loading)
+    yield return null;
+  isDone = true;
+}
+
+while(isDone)
+	yield return null;
+   
+DoThings needs A and B to finish.
+```
+
